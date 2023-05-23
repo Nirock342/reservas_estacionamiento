@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'reservas',
+    'bootstrap_datepicker_plus',
+    'bootstrap_datepicker',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
