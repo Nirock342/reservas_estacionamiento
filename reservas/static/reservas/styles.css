@@ -13,8 +13,8 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #00aeff;
+    color: #ffffff;
     padding: 20px;
 }
 
@@ -39,16 +39,16 @@ form {
 
 button {
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #01ff9e;
+    color: #ffffff;
     border: none;
     cursor: pointer;
 }
 
 /* Estilos del pie de página */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #00aeff;
+    color: #ffffff;
     padding: 20px;
     text-align: center;
 }
