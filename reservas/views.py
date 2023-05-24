@@ -10,7 +10,7 @@ def reserva(request):
         form = ReservaForm(request.POST)
         if form.is_valid():
             reserva = form.save(commit=False)
-            reserva.hora_entrada = datetime.now()  # Guardar la hora de entrada actual
+            reserva.fecha_entrada = datetime.now()  # Guardar la hora de entrada actual
             reserva.save()
             return redirect(reverse('reservas:reserva_exitosa'))
     else:
