@@ -22,4 +22,4 @@ class ReservaForm(forms.ModelForm):
     
     class Meta:
         model = Reserva
-        fields = ('fecha_reservada', 'nombre', 'cedula', 'placa_vehiculo')
+        fields = ('fecha_reservada', 'hora_reservada', 'nombre', 'cedula', 'placa_vehiculo')
