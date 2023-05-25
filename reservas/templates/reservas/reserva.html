@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -38,7 +39,8 @@
 
         input[type="text"],
         input[type="password"],
-        select {
+        select,
+        input[type="date"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -85,15 +87,29 @@
         <h2 class="section-title">Ingresa tu reserva</h2>
         <form method="post" action="{% url 'reservas:reserva' %}">
             {% csrf_token %}
-            {{ form.as_p }}
+            <p>
+                <label for="id_fecha_reservada">Fecha Reservada:</label>
+                {{ form.fecha_reservada }}
+            </p>
+            <p>
+                <label for="id_hora_reservada">Hora Reservada:</label>
+                {{ form.hora_reservada }}
+            </p>
+            <p>
+                <label for="id_nombre">Nombre:</label>
+                {{ form.nombre }}
+            </p>
+            <p>
+                <label for="id_cedula">Cédula:</label>
+                {{ form.cedula }}
+            </p>
+            <p>
+                <label for="id_placa_vehiculo">Placa del Vehículo:</label>
+                {{ form.placa_vehiculo }}
+            </p>
             <button type="submit">Reservar</button>
         </form>
     </div>
 
     <footer>
         <div class="container">
-            <p>Parkeate © 2023 Reservas de estacionamiento. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-</body>
-</html>
